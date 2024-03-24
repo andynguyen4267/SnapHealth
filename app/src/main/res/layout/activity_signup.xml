@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupPage">
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        app:layout_constraintTop_toBottomOf="@+id/firstName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        app:layout_constraintTop_toBottomOf="@+id/lastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <RadioGroup
+        android:id="@+id/genderGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/gender_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/genderGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/genderGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Height (cm)"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Weight (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

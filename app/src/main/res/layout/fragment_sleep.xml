@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000"
+    android:padding="16dp"
+    tools:context=".Sleep">
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="This is Sleep UI"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/switch1"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.3" />-->
+
+    <!--    <Switch-->
+    <!--        android:id="@+id/switch1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Switch to Sleep"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/textView11"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView"-->
+    <!--        app:layout_constraintVertical_bias="0.4" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView11"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Time Asleep:"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/switch1" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView10"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="You Slept in for:"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView11" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textViewSleptIn"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="0 hours, 0 minutes, 0 seconds"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView10" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/weatherAdviceTextView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text=""-->
+    <!--        android:textSize="16sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textViewSleptIn"-->
+    <!--        app:layout_constraintVertical_bias="0.2" />-->
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="165dp"
+        android:layout_height="144dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_background"
+        android:text="00:00 00"
+        android:textColor="@color/white"
+        android:textSize="53dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/analogClock"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="165dp"
+        android:layout_height="144dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_background"
+        android:text=" SLEEP SWITCH"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972" />
+
+    <TextView
+        android:id="@+id/weatherAdviceTextView"
+        android:layout_width="160dp"
+        android:layout_height="283dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/analogClock"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="165dp"
+        android:layout_height="144dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button_background"
+        android:text="You Slept In"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/weatherAdviceTextView"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="82dp"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.709"
+        app:thumbTint="@color/your_thumb_color"
+        app:trackTint="@color/your_track_color" />
+
+    <AnalogClock
+        android:id="@+id/analogClock"
+        android:layout_width="162dp"
+        android:layout_height="160dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.988" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="92dp"
+        android:src="@drawable/sleep_icon"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:text="Sleep Tracker"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/analogClock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="@string/view_your_sleep"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherAdviceTextView"
+        app:layout_constraintVertical_bias="0.7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
